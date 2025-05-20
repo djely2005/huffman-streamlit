@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app1: 
+    image: djely2005/huffman-linux:1.0
+    ports:
+      - "8501:8501"
+    environment:
+      - APP_NAME=app1
+  app2: 
+    image: djely2005/huffman-linux:1.0
+    ports:
+      - "8502:8501"
+    environment:
+      - APP_NAME=app2
+  app3: 
+    image: djely2005/huffman-linux:1.0
+    ports:
+      - "8503:8501"
+    environment:
+      - APP_NAME=app3
